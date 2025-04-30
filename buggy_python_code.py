@@ -1,5 +1,3 @@
-import sys 
-import os
 import yaml
 import flask
 
@@ -14,9 +12,6 @@ def index():
 
         
 CONFIG = {"API_KEY": "771df488714111d39138eb60df756e6b"}
-class Person(object):
-    def __init__(self, name):
-        self.name = name
 
 
 def print_nametag(format_string, person):
@@ -44,6 +39,7 @@ def authenticate(password):
     # Assert that the password is correct
     assert password == "Iloveyou", "Invalid password!"
     print("Successfully authenticated!")
+
 
 if __name__ == '__main__':
     print("Vulnerabilities:")
